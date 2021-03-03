@@ -26,7 +26,9 @@
   const heading = document.createElement("h1");
   const p1 = document.createElement("p");
   const img = document.createElement("img");
-  img.src = detail.image.url;
+  const img2 = document.createElement("img");
+  img.src = `${detail.image.url}?h=300`;
+  img.loading = `lazy`;
   heading.appendChild(title);
   p1.appendChild(id);
   main.appendChild(heading);
